@@ -388,6 +388,47 @@ big {
   width: 25%;
 }
 
+/* Media Queries -- Responsive 1024px, 768px, 720px, 640px, 480px, 414px, 360px, 320px */
+/* 1024px */
+/*********/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* 768px */
+/********/
+@media screen and (max-width: 768px) {
+  .quarter-section {
+    width: 50%;
+  }
+}
+
+/* 640px */
+/********/
+@media screen and (max-width: 640px) {
+  .third-section {
+    width: 100%;
+  }
+}
+
+/* 480px */
+/********/
+@media screen and (max-width: 480px) {
+  .half-section {
+    width: 100%;
+  }
+}
+
+/* 320px */
+/********/
+@media screen and (max-width: 320px) {
+  .quarter-section {
+    width: 100%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -425,7 +466,8 @@ hr {
 }
 
 ul, ol {
-  margin: 0 0 1.5em 3em;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
