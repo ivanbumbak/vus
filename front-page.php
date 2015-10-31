@@ -14,6 +14,6 @@
 
 get_header();
 
-include 'sections/home/hero-home.php';
+include 'sections/home/news-home.php';
 
 get_footer(); ?>
