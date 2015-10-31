@@ -1,41 +1,67 @@
 .main-section {
 	display: flex;
 	justify-content: center;
-	background-color: #CECECE;
-	padding: 60px 0;
+	background-color: $lGrey;
+	padding-bottom: 60px;
 }
 
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	width: 1280px;
+	justify-content: space-between;
 }
 
 .section-heading {
 	width: 100%;
 	text-align: center;
+
+	h1 {
+		margin: 0;
+		padding: 0.84em;
+		text-transform: uppercase;
+		font-size: 58px;
+	}
+}
+
+.subsection-header {
+	text-align: center;
+
+	h1, h2, h3 {
+		padding: 15px;
+		margin: 0;
+	}
 }
 
 .subsection {
-	padding: 15px;
 	margin-bottom: 30px;
+	background-color: white;
+
+	h1, h2, h3 {
+		margin: 0;
+		padding: 0.84em 0.84em 0 0.84em;
+	}
 }
 
 .full-subsection {
 	width: 100%;
-	background-color: #333;
+
+	h1, h2, h3 {
+		margin: 0;
+		padding: 0.84em;
+	}
 }
 
 .half-section {
-	width: 50%;
+	width: 49.5%;
 }
 
 .third-section {
-	width: 33.33%;
+	width: 32.66%;
 }
 
 .quarter-section {
-	width: 25%;
+	width: 24.25%;
 }
 
 /* Media Queries -- Responsive 1024px, 768px, 720px, 640px, 480px, 414px, 360px, 320px */

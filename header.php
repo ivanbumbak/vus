@@ -13,7 +13,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans+Condensed:700|Open+Sans:400,300,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans+Condensed:700|Fira+Sans:400,500,700|Slabo+13px|Open+Sans:400,300,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">

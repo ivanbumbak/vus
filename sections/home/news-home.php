@@ -9,13 +9,13 @@
 		</div>
 
 		<div class="half-section subsection">
-			<header class="header-subsection">
+			<header class="subsection-header">
 				<h2>Header Half Subsection</h2>
 			</header>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cum iusto doloribus officiis delectus alias consectetur ullam, animi totam assumenda, ad earum quis non nostrum placeat provident dolores ratione similique! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim dolor cum rem magnam voluptatem atque non voluptatibus maxime aliquid quasi vel, distinctio ut aliquam, quo eaque! Vel, tempora, debitis!</p>
 		</div>
 		<div class="half-section subsection">
-			<header class="header-subsection">
+			<header class="subsection-header">
 				<h2>Header Half Subsection</h2>
 			</header>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum a, distinctio. Est natus animi voluptatibus aut asperiores vitae, tenetur, optio distinctio! Obcaecati cumque tempora esse soluta ipsam debitis atque enim? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eveniet debitis ea pariatur ducimus corrupti et nisi vel in, ipsam nemo quo eaque nesciunt culpa laborum. Aut delectus blanditiis dolores.</p>
