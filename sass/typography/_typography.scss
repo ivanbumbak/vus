@@ -17,9 +17,70 @@ h2 {
 	font-family: $OSC;
 }
 
-p, a {
+p {
+	font-size: 21px;
+	color: #555;
 	font-family: $OS;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0.84em 0;
 }
+
+a {
+	text-decoration: none;
+}
+
+ul, ol {
+	color: #333;
+
+	li {
+		padding: 5px 0;
+		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	h1 {
+		font-size: 48px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.subheading {
+		font-size: 21px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 21px;
+	}
+
+	.subheading {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 16px
+	}
+}
+
 
 @import "headings";
 

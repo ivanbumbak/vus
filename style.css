@@ -289,8 +289,62 @@ h2 {
   font-family: Open Sans Condensed, sans-serif;
 }
 
-p, a {
+p {
+  font-size: 21px;
+  color: #555;
   font-family: Open Sans, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0.84em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  color: #333;
+}
+
+ul li, ol li {
+  padding: 5px 0;
+  font-size: 21px;
+}
+
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .subheading {
+    font-size: 21px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  .subheading {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -349,15 +403,26 @@ big {
 # Layout
 --------------------------------------------------------------*/
 .main-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #CECECE;
   padding: 60px 0;
 }
 
 .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   width: 1280px;
 }
 
@@ -614,8 +679,13 @@ a:active {
 }
 
 .main-navigation .nav-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   list-style: none;
 }
 
@@ -819,6 +889,7 @@ a:active {
 --------------------------------------------------------------*/
 .hero-section {
   height: 75vh;
+  background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url("img/hero.jpg");
   background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url("img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -850,8 +921,15 @@ a:active {
 }
 
 .container {
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*--------------------------------------------------------------
