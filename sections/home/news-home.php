@@ -1,4 +1,4 @@
-<section class="hero-home main-section">
+<section class="news-home main-section">
 	<div class="container">
 		<div class="section-heading">
 			<h1>Hero Home Section</h1>
