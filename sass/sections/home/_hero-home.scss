@@ -7,9 +7,34 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	padding-top: 30px;
+
+	h1, h2 {
+		margin: 0;
+	}
 }
+
+#hr-heading, #en-heading {
+	color: #FEFEFE;
+}
+
+#hr-heading {
+	font-size: 65px;
+}
+
+#en-heading {
+	font-size: 35px;
+}
+
 
 #site-logo {
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
+	margin-top: 30px;
 }
 
+.container {
+	flex-direction: column;
+	align-items: center;
+}
