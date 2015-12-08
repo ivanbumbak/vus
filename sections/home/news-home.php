@@ -6,10 +6,6 @@
 ?>
 <section class="news-home main-section">
 	<div class="container">
-		<div class="section-heading">
-			<h1>Hero Home Section</h1>
-		</div>
-
 		<div id="home_news-container" class="half-section">
 			<!-- Ispisuje dvi najnovije obavijesti s kategorijom 'news' -->
 			<?php

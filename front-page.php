@@ -15,5 +15,6 @@
 get_header();
 
 include 'sections/home/news-home.php';
+include 'sections/home/studies-home.php';
 
 get_footer(); ?>

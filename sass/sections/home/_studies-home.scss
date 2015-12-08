@@ -1,0 +1,45 @@
+// TODO: Font koji poržava ČŠĆŽŠĐ
+// TODO: Na hover nekakav sneak-peek sadržaja
+// TODO: Prave slike koje se eventualno mogu minjati iz sučelja
+// TODO: Eventualno prominit boje naslova
+// TODO: Hover animacije
+
+.studies-home {
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.study-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 1% 5%;
+  height: 50%;
+  background-size: cover;
+
+  &.half-section {
+    width: 50%;
+  }
+}
+
+.study-heading {
+  text-align: center;
+  color: $lGrey;
+}
+
+#im-study {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/im-study.jpg);
+}
+
+#tm-study {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/tm-study.jpg);
+}
+
+#up-study {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/up-study.jpg);
+}
+
+#pro-study {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/pro-study.jpg);
+}
