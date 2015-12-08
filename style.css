@@ -467,7 +467,6 @@ ul li, ol li {
 
 .subsection h1, .subsection h2, .subsection h3 {
   margin: 0;
-  padding: 0.84em 0.84em 0 0.84em;
 }
 
 .full-subsection {
@@ -1216,6 +1215,51 @@ a:active {
 #pro-study {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/pro-study.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/pro-study.jpg);
+}
+
+.programs-home {
+  padding: 60px;
+}
+
+.programs-home .section-heading {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 120px;
+}
+
+.home-program {
+  background: none;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.home-program:nth-child(-n+4) {
+  margin-bottom: 60px;
+}
+
+.home-program_icon {
+  font-size: 84px;
+}
+
+.home-program_heading {
+  padding: 0.84em;
 }
 
 /*--------------------------------------------------------------
