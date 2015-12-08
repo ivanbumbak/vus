@@ -1128,6 +1128,37 @@ a:active {
   }
 }
 
+#home_news-container, #home_events-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#home_news-container .subsection, #home_events-container .subsection {
+  margin-bottom: 2.3%;
+}
+
+#home_news-container .subsection:nth-child(2), #home_events-container .subsection:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.home-post_title {
+  font-size: 21px;
+  padding: 0.84em;
+  padding-bottom: 0;
+  display: block;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
