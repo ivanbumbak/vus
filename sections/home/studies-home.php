@@ -11,4 +11,10 @@
   <div id="pro-study" class="study-section half-section">
     <h1 class="study-heading">PROMET</h1>
   </div>
+  <div id="spec-study" class="study-section half-section">
+    <h1 class="study-heading">SPECIJALISTIČKI STUDIJ</h1>
+  </div>
+  <div id="paper-study" class="study-section half-section">
+    <h1 class="study-heading">ZAVRŠNI RADOVI</h1>
+  </div>
 </section>

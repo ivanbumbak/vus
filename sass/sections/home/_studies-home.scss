@@ -13,10 +13,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
   padding: 1% 5%;
   height: 50%;
   background-size: cover;
+  background-position: center center;
 
   &.half-section {
     width: 50%;
@@ -26,6 +26,7 @@
 .study-heading {
   text-align: center;
   color: $lGrey;
+  font-size: 48px;
 }
 
 #im-study {
@@ -42,4 +43,12 @@
 
 #pro-study {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/pro-study.jpg);
+}
+
+#spec-study {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/spec-study.jpg);
+}
+
+#paper-study {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/paper-study.jpg);
 }
