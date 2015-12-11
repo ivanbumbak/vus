@@ -13,13 +13,11 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'vus' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'vus' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'vus' ), 'vus', '<a href="http://it.vus.hr" rel="designer">Informatička Sekcija</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<footer id="footer" class="site-footer" role="contentinfo">
+		<div class="container">
+			<h1 class="section-heading">Footer</h1>
+		</div>
+	</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

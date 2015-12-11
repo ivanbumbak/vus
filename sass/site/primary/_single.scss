@@ -1,0 +1,35 @@
+body.single {
+
+  #hero-section {
+    height: 40vh;
+
+    .container {
+      align-items: center;
+    }
+  }
+
+  #hr-heading, #en-heading {
+    display: none;
+  }
+
+  .hero-extras {
+    position: initial;
+    width: initial;
+    transform: none;
+  }
+
+  .hero-extra {
+    margin: 0;
+  }
+}
+
+.single-title {
+  font-family: $OS;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.single-meta {
+  font-family: $OS;
+  font-weight: 400;
+}

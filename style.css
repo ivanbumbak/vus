@@ -439,6 +439,17 @@ ul li, ol li {
           justify-content: space-between;
 }
 
+#primary {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .section-heading {
   width: 100%;
   text-align: center;
@@ -931,6 +942,47 @@ a:active {
 
 .bypostauthor {
   display: block;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+body.single #hero-section {
+  height: 40vh;
+}
+
+body.single #hero-section .container {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.single #hr-heading, body.single #en-heading {
+  display: none;
+}
+
+body.single .hero-extras {
+  position: initial;
+  width: initial;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+
+body.single .hero-extra {
+  margin: 0;
+}
+
+.single-title {
+  font-family: Open Sans, sans-serif;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.single-meta {
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
 }
 
 /*--------------------------------------------------------------
