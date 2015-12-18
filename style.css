@@ -471,7 +471,7 @@ ul li, ol li {
   width: 100%;
   text-align: center;
   margin: 0;
-  padding: 0.84em;
+  padding: 30px;
   padding-top: 0;
   text-transform: uppercase;
   font-size: 36px;
@@ -765,8 +765,11 @@ a:active {
 .main-navigation a {
   display: inline-block;
   text-decoration: none;
-  font-family: Montserrat, sans-serif;
   padding: 20px 0;
+  font-family: Fira Sans, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
 }
 
 /* Small menu. */

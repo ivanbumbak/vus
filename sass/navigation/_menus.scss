@@ -14,11 +14,13 @@
 	a {
 		display: inline-block;
 		text-decoration: none;
-		font-family: $Mont;
 		padding: 20px 0;
+		font-family: $FS;
+		text-transform: uppercase;
+		font-weight: 600;
+		line-height: 1;
 	}
 }
-
 
 /* Small menu. */
 .menu-toggle,
