@@ -126,6 +126,16 @@ function vus_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'vus_scripts' );
 
+/*
+	* Display the Read More link when using the_excerpt()
+	*/
+function new_excerpt_more($more) {
+	global $post;
+	return '<a class="read-more" href="'. get_permalink($post->ID) . '"> Pročitaj više <i class="fa fa-angle-right"></i></a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+
 /**
  * Implement the Custom Header feature.
  */

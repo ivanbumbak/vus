@@ -23,13 +23,99 @@ body.single {
   }
 }
 
+.single-header {
+  margin: 60px 0 20px;
+}
+
 .single-title {
-  font-family: $OS;
-  font-weight: 300;
-  margin-bottom: 0;
+  font-family: $FS;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .single-meta {
-  font-family: $OS;
-  font-weight: 400;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $FS;
+  font-weight: 600;
+  color: $mGrey;
+}
+
+.posted-on {
+  padding-right: 20px;
+}
+
+.meta-icon {
+  padding-right: 5px;
+  color: $lOrange;
+  font-size: 130%;
+}
+
+.cat-links {
+  flex-grow: 2;
+
+  a {
+  color: $mGrey;
+  }
+}
+
+.edit-link {
+  a {
+    margin-left: 10px;
+    background-color: $Red;
+    display: inline-block;
+    border-radius: 20px;
+    color: $dGrey;
+    padding: 5px 30px;
+
+    &:hover {
+      color: $Red;
+      background-color: $dGrey;
+    }
+  }
+}
+
+// Other Posts
+
+.other-posts-section {
+  background-color: $dGrey;
+
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .subsection-heading {
+    color: $lGrey;
+    padding: 30px 0;
+  }
+}
+
+.other-posts_header {
+  h2 {
+    color: lighten($lBlue, 20%);
+    background-color: $dBlue;
+    line-height: 1.2;
+    padding: 15px;
+    font-size: 21px;
+    font-weight: 600;
+  }
+}
+
+.other-posts_excerpt {
+  font-size: 18px;
+  padding: 15px;
+}
+
+.other-posts_footer {
+  span {
+    display: block;
+    padding: 0 15px 10px 15px;
+    font-family: $FS;
+    font-weight: 600;
+    color: $mGrey;
+  }
 }

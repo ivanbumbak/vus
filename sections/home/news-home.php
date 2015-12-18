@@ -7,6 +7,8 @@
 <section class="news-home main-section">
 	<div class="container">
 		<div id="home_news-container" class="half-section">
+			<h1 class="subsection-heading">Novosti</h1>
+
 			<!-- Ispisuje dvi najnovije obavijesti s kategorijom 'news' -->
 			<?php
 
@@ -20,10 +22,14 @@
 
 			?>
 			<!-- SAV sadržaj i informacije od objave idu ode -->
-					<div class="home-post full-section subsection">
-						<a class="home-post_title" href="<?php echo get_permalink(); ?>"> <?php the_title(); ?> </a>
-						<?php the_excerpt(); ?>
-					</div>
+					<article class="home-post full-section subsection">
+						<header class="home-post_header">
+							<a class="home-post_title" href="<?php echo get_permalink(); ?>"> <?php the_title(); ?> </a>
+						</header>
+						<div class="home-post_content">
+							<?php the_excerpt(); ?>
+						</div>
+					</article>
 			<?php
 					endwhile;
 				endif;
@@ -31,6 +37,7 @@
 		</div>
 
 		<div id="home_events-container" class="half-section">
+			<h1 class="subsection-heading">Događanja</h1>
 			<!-- Ispisuje dvi najnovije obavijesti s kategorijom 'events' -->
 			<?php
 				$eventsCategoryID = 3; //the certain category ID
@@ -42,10 +49,14 @@
 						$latestPosts->the_post();
 			?>
 			<!-- SAV sadržaj i informacije od objave idu ode -->
-					<div class="home-post full-section subsection">
-						<a class="home-post_title" href="<?php echo get_permalink(); ?>"> <?php the_title(); ?> </a>
-						<?php the_excerpt(); ?>
-					</div>
+					<article class="home-post full-section subsection">
+						<header class="home-post_header">
+							<a class="home-post_title" href="<?php echo get_permalink(); ?>"> <?php the_title(); ?> </a>
+						</header>
+						<div class="home-post_content">
+							<?php the_excerpt(); ?>
+						</div>
+					</article>
 			<?php
 					endwhile;
 				endif;

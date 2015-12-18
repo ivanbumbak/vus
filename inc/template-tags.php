@@ -13,6 +13,7 @@ if ( ! function_exists( 'vus_posted_on' ) ) :
  */
 function vus_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+	$icon = '<i class="meta-icon fa fa-clock-o"></i>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 	}
@@ -34,7 +35,7 @@ function vus_posted_on() {
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+	echo '<span class="posted-on">' . $icon . $posted_on . '</span>'; // WPCS: XSS OK.
 
 }
 endif;
@@ -48,8 +49,9 @@ function vus_entry_footer() {
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'vus' ) );
+		$icon = '<i class="meta-icon fa fa-bookmark"></i>';
 		if ( $categories_list && vus_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( '%1$s', 'vus' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . $icon . esc_html__( '%1$s', 'vus' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */

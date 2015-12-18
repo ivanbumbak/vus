@@ -8,18 +8,22 @@
  */
 
 ?>
+<!--
+	Post ID
+id="post-<?php // the_ID(); ?>"
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+Post Class
+ <?php // post_class(); ?>
+-->
+
+<article class="post-single">
 	<header class="single-header">
 		<?php the_title( '<h1 class="single-title">', '</h1>' ); ?>
 
 		<div class="single-meta">
 			<?php vus_posted_on(); ?>
-		</div><!-- .entry-meta -->
-
-		<div class="single-extras">
 			<?php vus_entry_footer(); ?>
-		</div><!-- .entry-footer -->
+		</div><!-- .entry-meta -->
 
 	</header><!-- .entry-header -->
 
@@ -28,4 +32,4 @@
 	</div><!-- .entry-content -->
 
 
-</article><!-- #post-## -->
+</article><!-- .post-single -->
