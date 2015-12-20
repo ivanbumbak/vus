@@ -26,3 +26,38 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+// Category specific css
+.dogadanja-text {
+	color: $lOrange;
+}
+
+.dogadanja-bg {
+	background-color: $lOrange;
+}
+
+.dogadanja-all {
+	color: darken($dOrange, 10%);
+	background-color: $lOrange;
+}
+
+a.dogadanja-all:hover {
+	color: darken($dOrange, 20%);
+}
+
+.novosti-text {
+	color: $mBlue;
+}
+
+.novosti-bg {
+	background-color: $mBlue;
+}
+
+.novosti-all {
+	color: darken($dBlue, 20%);
+	background-color: $mBlue;
+}
+
+a.novosti-all:hover {
+	color: darken($dBlue, 30%);
+}

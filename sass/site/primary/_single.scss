@@ -1,7 +1,7 @@
 body.single {
 
   #hero-section {
-    height: 40vh;
+    height: 20vh;
 
     .container {
       align-items: center;
@@ -95,19 +95,23 @@ body.single {
 }
 
 .other-posts_header {
-  h2 {
-    color: lighten($lBlue, 20%);
-    background-color: $dBlue;
-    line-height: 1.2;
-    padding: 15px;
-    font-size: 21px;
-    font-weight: 600;
-  }
+}
+
+.other-posts_title {
+  display: block;
+  line-height: 1.2;
+  padding: 15px;
+  font-size: 21px;
+  font-weight: 600;
 }
 
 .other-posts_excerpt {
-  font-size: 18px;
   padding: 15px;
+
+  p {
+    padding: 0;
+    font-size: 18px;
+  }
 }
 
 .other-posts_footer {

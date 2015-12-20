@@ -135,6 +135,11 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+// Custom length excerpt, needs echo to output properly, the limit is the amount of words
+function excerpt($limit) {
+    return wp_trim_words(get_the_excerpt(), $limit, '');
+}
+
 
 /**
  * Implement the Custom Header feature.

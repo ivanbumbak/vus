@@ -2,9 +2,6 @@ a {
 	color: $mBlue;
 	transition: .15s ease-in-out;
 
-	&:visited {
-		color: $lOrange;
-	}
 	&:hover,
 	&:focus,
 	&:active {

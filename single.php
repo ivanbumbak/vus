@@ -22,33 +22,61 @@ get_header(); ?>
 
 </section>
 
+<?php
+	$categories = get_the_category();
+
+	if ( !empty( $categories ) ) {
+			$catName = esc_html( $categories[0]->name ); // First category of the open post
+			$catID = get_cat_ID( $catName ); // Returns the category ID of the Post based on first category of the post
+			$catClass = strtolower(remove_accents( $catName )); // Removes uppercase and accents to use in html
+	}
+?>
+
 <section class="other-posts-section main-section">
 	<div class="container">
-		<h1 class="other-posts_heading subsection-heading">Najnovije objave</h1>
-		<div class="other-posts third-section subsection">
-			<header class="other-posts_header"><h2>Other Post Header Testerino Peperoni Riperino</h2></header>
-			<p class="other-posts_excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi.</p>
-			<footer class="other-posts_footer">
-				<span>Posted on December 56, 2077</span>
-			</footer>
-		</div>
 
-		<div class="other-posts third-section subsection">
-			<header class="other-posts_header"><h2>Other Post Header</h2></header>
-			<p class="other-posts_excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi.</p>
-			<footer class="other-posts_footer">
-				<span>Posted on December 56, 2077</span>
-			</footer>
-		</div>
+		<h1 class="other-posts_heading subsection-heading">
+			<?php
+			if($catName == 'Događanja') {	echo 'Najnovija';	} else { echo 'Najnovije'; } ?>
+			<span class="<?php echo $catClass; ?>-text">
+			<!-- Outputs the first category of the post currently open -->
+			<?php echo $catName; ?>
+			</span>
+		</h1>
 
-		<div class="other-posts third-section subsection">
-			<header class="other-posts_header"><h2>Other Post Header</h2></header>
-			<p class="other-posts_excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi.</p>
-			<footer class="other-posts_footer">
-				<span>Posted on December 56, 2077</span>
-			</footer>
-		</div>
-	</div>
+		<?php
+			$args = array(
+				'posts_per_page' => 3,
+				'order'=> 'DESC',
+				'orderby' => 'date',
+			 	'category' => $catID,
+				'exclude' => get_the_ID()
+			);
+
+			$posts = get_posts( $args );
+
+			foreach ( $posts as $post ) :
+			  setup_postdata( $post ); ?>
+
+				<article class="other-posts third-section subsection">
+					<header class="other-posts_header">
+						<a class="other-posts_title <?php echo $catClass; ?>-all" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+					</header>
+					<div class="other-posts_excerpt">
+						<p>
+							<?php echo excerpt(20); ?>
+						</p>
+					</div>
+					<footer class="other-posts_footer">
+						<span>Objavljeno <?php the_date(); ?></span>
+					</footer>
+				</article>
+
+		<?php
+			endforeach;
+			wp_reset_postdata();
+		?>
+
 </section>
 
 <?php get_sidebar(); ?>
