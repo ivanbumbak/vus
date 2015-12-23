@@ -42,6 +42,9 @@ function vus_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size( 'home-post_thumbnail', 320);
+	add_image_size( 'single-post_thumbnail', 640);
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'vus' ),

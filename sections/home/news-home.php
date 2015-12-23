@@ -23,12 +23,24 @@
 			?>
 			<!-- SAV sadržaj i informacije od objave idu ode -->
 					<article class="home-post full-section subsection">
-						<header class="home-post_header">
-							<a class="home-post_title" href="<?php echo get_permalink(); ?>"> <?php the_title(); ?> </a>
-						</header>
-						<div class="home-post_content">
-							<?php the_excerpt(); ?>
-						</div>
+						<?php
+						if(has_post_thumbnail()) { ?>
+						<a href="<?php echo get_permalink(); ?>" class="home-post_image">
+							<?php the_post_thumbnail('home-post_thumbnail'); ?>
+						</a>
+						<?php } ?>
+						<content>
+							<header class="home-post_header">
+								<a class="home-post_title" href="<?php echo get_permalink(); ?>"> <?php the_title(); ?> </a>
+							</header>
+							<div class="home-post_excerpt">
+								<p><?php echo excerpt(10); ?></p>
+							</div>
+							<footer class="home-post_footer">
+								<?php vus_posted_on(); ?>
+							</footer>
+						</content>
+
 					</article>
 			<?php
 					endwhile;
@@ -49,14 +61,26 @@
 						$latestPosts->the_post();
 			?>
 			<!-- SAV sadržaj i informacije od objave idu ode -->
-					<article class="home-post full-section subsection">
-						<header class="home-post_header">
-							<a class="home-post_title" href="<?php echo get_permalink(); ?>"> <?php the_title(); ?> </a>
-						</header>
-						<div class="home-post_content">
-							<?php the_excerpt(); ?>
-						</div>
-					</article>
+			<article class="home-post full-section subsection">
+				<?php
+				if(has_post_thumbnail()) { ?>
+				<a href="<?php echo get_permalink(); ?>" class="home-post_image">
+					<?php the_post_thumbnail('home-post_thumbnail'); ?>
+				</a>
+				<?php } ?>
+				<content>
+					<header class="home-post_header">
+						<a class="home-post_title" href="<?php echo get_permalink(); ?>"> <?php the_title(); ?> </a>
+					</header>
+					<div class="home-post_excerpt">
+						<p><?php echo excerpt(10); ?></p>
+					</div>
+					<footer class="home-post_footer">
+						<?php vus_posted_on(); ?>
+					</footer>
+				</content>
+
+			</article>
 			<?php
 					endwhile;
 				endif;

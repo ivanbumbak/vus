@@ -28,6 +28,11 @@ Post Class
 	</header><!-- .entry-header -->
 
 	<div class="single-content">
+		<?php
+		if(has_post_thumbnail()) {
+				the_post_thumbnail('single-post_thumbnail');
+		}
+		?>
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 

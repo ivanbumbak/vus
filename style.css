@@ -347,6 +347,12 @@ h2 {
   padding: 0.64em;
 }
 
+span {
+  font-size: 18px;
+  color: #95A5A6;
+  font-family: Fira Sans, sans-serif;
+}
+
 p {
   font-size: 21px;
   color: #555;
@@ -1088,6 +1094,14 @@ body.single .hero-extra {
   background-color: #333333;
 }
 
+.single-content {
+  text-align: center;
+}
+
+.single-content p {
+  text-align: left;
+}
+
 .other-posts-section {
   background-color: #333333;
 }
@@ -1108,6 +1122,10 @@ body.single .hero-extra {
   padding: 30px 0;
 }
 
+.other-posts-section .subsection-heading span {
+  font-size: 100%;
+}
+
 .other-posts_title {
   display: block;
   line-height: 1.2;
@@ -1126,6 +1144,7 @@ body.single .hero-extra {
 }
 
 .other-posts_footer span {
+  font-size: 100%;
   display: block;
   padding: 0 15px 10px 15px;
   font-family: Fira Sans, sans-serif;
@@ -1356,17 +1375,66 @@ body.single .hero-extra {
   margin-bottom: 0;
 }
 
+.home-post {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-post content {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-post_header {
+  border-bottom: 1px solid #ECF0F1;
+}
+
 .home-post_title {
   font-size: 24px;
   font-weight: 600;
   padding: 20px;
-  padding-bottom: 0;
   display: block;
   line-height: 1;
 }
 
-.home-post_content p {
+.home-post_image img {
+  display: block;
+}
+
+.home-post_excerpt p {
   font-size: 18px;
+  padding: 0 20px;
+}
+
+.home-post_footer span {
+  display: block;
+  padding: 10px 20px;
+  border-top: 1px solid #ECF0F1;
+  font-size: 16px;
+  color: #95A5A6;
+  font-weight: 600;
+}
+
+.home-post_footer span i {
+  display: none;
+}
+
+.home-post_footer span a {
+  color: #95A5A6;
 }
 
 .studies-home {

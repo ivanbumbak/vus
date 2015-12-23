@@ -78,6 +78,13 @@ body.single {
   }
 }
 
+.single-content {
+  text-align: center;
+  p {
+    text-align: left;
+  }
+}
+
 // Other Posts
 
 .other-posts-section {
@@ -91,6 +98,10 @@ body.single {
   .subsection-heading {
     color: $lGrey;
     padding: 30px 0;
+
+    span {
+      font-size: 100%;
+    }
   }
 }
 
@@ -116,6 +127,7 @@ body.single {
 
 .other-posts_footer {
   span {
+    font-size: 100%;
     display: block;
     padding: 0 15px 10px 15px;
     font-family: $FS;
