@@ -3,8 +3,15 @@
 
 
 	<div class="container">
-		<h1 id="hr-heading">Veleučilište u Šibeniku</h1>
-		<h2 id="en-heading">Polytechnics of Sibenik</h2>
+		<?php
+		if(is_front_page()) {
+			siteHeading();
+		}
+		else {
+			pageHeading();
+		}
+
+		?>
 		<!-- <img id="site-logo" src="http://i.imgur.com/6mcBIYX.jpg"> -->
 
 		<div class="hero-extras">

@@ -23,59 +23,6 @@
   }
 }
 
-.home-post {
-  display: flex;
-
-  content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-
-.home-post_header {
-  border-bottom: 1px solid $lGrey;
-}
-
-.home-post_title {
-  font-size: 24px;
-  font-weight: 600;
-  padding: 20px;
-  display: block;
-  line-height: 1;
-}
-
-.home-post_image {
-  img {
-    display: block;
-  }
-}
-
-.home-post_excerpt {
-  p {
-    font-size: 18px;
-    padding: 0 20px;
-  }
-}
-
-.home-post_footer {
-  span {
-    display: block;
-    padding: 10px 20px;
-    border-top: 1px solid $lGrey;
-    font-size: 16px;
-    color: $mGrey;
-    font-weight: 600;
-    i {
-      display: none;
-    }
-    a {
-      color: $mGrey;
-    }
-  }
-}
-
 #home_news-container {
 
 }

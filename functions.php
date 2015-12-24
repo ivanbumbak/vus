@@ -143,6 +143,68 @@ function excerpt($limit) {
     return wp_trim_words(get_the_excerpt(), $limit, '');
 }
 
+// Add a class to the post if it has a thumbnail
+function thumbClass() {
+	if(has_post_thumbnail()) {
+		echo 'has-thumbnail';
+	}
+}
+
+// Output the site heading if its front page, else output page title
+function siteHeading() {
+	echo '<h1 id="hr-heading">Veleučilište u Šibeniku</h1>';
+	echo '<h2 id="en-heading">Polytechnics of Sibenik</h2>';
+}
+
+function pageHeading() {
+	the_title( '<h1 class="page-title">', '</h1>' );
+}
+
+// Function to display posts in a specific category
+function postsInCategory($catName, $numOfPosts, $excerptLength, $articleClass) {
+// Ispisuje dvi najnovije obavijesti s kategorijom 'news'
+
+	$catID = get_cat_ID($catName); //Return the Category ID from the Category Name
+	$latestPosts = new WP_Query(
+		array(
+			'posts_per_page' => $numOfPosts,
+			'category__in' => array($catID)
+		)
+	);
+
+	if($latestPosts -> have_posts()) :
+		while($latestPosts -> have_posts()) :
+			$latestPosts -> the_post();
+	?>
+
+	<article class="<?php thumbClass(); echo ' ' . $articleClass; ?> post subsection">
+		<?php
+		if(has_post_thumbnail()) : ?>
+			<a href="<?php echo get_permalink(); ?>" class="post-image">
+				<?php the_post_thumbnail('home-post_thumbnail'); ?>
+			</a>
+		<?php endif; ?>
+		<!-- Post Content -->
+		<content class="post-content">
+			<!-- Post Header -->
+			<header class="post-header">
+				<a class="post-title" href="<?php echo get_permalink(); ?>"> <?php the_title(); ?> </a>
+			</header>
+			<!-- Post Excerpt -->
+			<div class="post-excerpt">
+				<p><?php echo excerpt($excerptLength); ?></p>
+			</div>
+			<!-- Post Footer -->
+			<footer class="post-footer">
+				<?php vus_posted_on(); ?>
+			</footer>
+		</content>
+	</article>
+<?php
+		endwhile;
+	endif;
+}
+
 
 /**
  * Implement the Custom Header feature.

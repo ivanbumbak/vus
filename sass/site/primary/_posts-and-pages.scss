@@ -1,3 +1,84 @@
+// Posts output throughout the pages
+.post {
+  display: flex;
+
+	&.has-thumbnail {
+		.post-content {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+}
+
+.post-header {
+  border-bottom: 1px solid $lGrey;
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px;
+  display: block;
+  line-height: 1.2;
+}
+
+.post-image {
+  img {
+    display: block;
+  }
+}
+
+.post-excerpt {
+  p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+}
+
+.post-footer {
+  span {
+    display: block;
+    padding: 10px 20px;
+    border-top: 1px solid $lGrey;
+    font-size: 16px;
+    color: $mGrey;
+    font-weight: 600;
+    i {
+      display: none;
+    }
+    a {
+      color: $mGrey;
+    }
+  }
+}
+
+// General Page Styles
+.page {
+  #hero-section {
+    height: 300px;
+
+    .container {
+      align-items: center;
+    }
+  }
+
+  .hero-extras {
+  }
+
+  .hero-extra {
+    margin: 0;
+  }
+}
+
+.page-title {
+  color: $lGrey;
+  text-transform: uppercase;
+  font-family: $Ubuntu;
+}
+
+
 .sticky {
 	display: block;
 }
