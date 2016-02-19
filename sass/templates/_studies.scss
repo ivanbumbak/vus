@@ -1,0 +1,43 @@
+.schedules {
+  position: relative;
+  margin: 30px auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.schedule {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba($dGrey, 0.3);
+    transition: all .3s ease-in-out;
+
+    .schedule-icon {
+      color: $mBlue;
+      transition: all .3s ease-in-out;
+    }
+  }
+}
+
+.schedule-icon {
+  padding-left: 20px;
+  font-size: 24px;
+  color: $mGrey;
+}
+
+.schedule-text {
+  padding-right: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: $Mont;
+  line-height: 1;
+  color: $mBlue;
+}

@@ -26,8 +26,7 @@ function vus_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'vus' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		esc_html_x( 'Posted on %s', 'post date', 'vus' ), $time_string
 	);
 
 	$byline = sprintf(

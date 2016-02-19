@@ -7,23 +7,32 @@
 		if(is_front_page()) {
 			siteHeading();
 		}
-		else {
+		elseif(is_page()) {
 			pageHeading();
 		}
 
 		?>
-		<!-- <img id="site-logo" src="http://i.imgur.com/6mcBIYX.jpg"> -->
+		<div class="hero-extras container-small">
+			<a href="#" class="hero-extra third-section subsection">
+				<div class="hero-extra_icon">
+					<i class="fa fa-envelope"></i>
+				</div>
+				<span class="hero-extra_text">Email</span>
+			</a>
 
-		<div class="hero-extras">
-			<div  class="hero-extra third-section subsection">
-				<a href="#"><i class="fa fa-envelope"></i>Email</a>
-			</div>
-			<div  class="hero-extra third-section subsection">
-				<a href="#"><i class="fa fa-book"></i>eLearning</a>
-			</div>
-			<div  class="hero-extra third-section subsection">
-				<a href="#"><i class="fa fa-graduation-cap"></i>ISVU</a>
-			</div>
+			<a href="#" class="hero-extra third-section subsection">
+				<div class="hero-extra_icon">
+					<i class="fa fa-book"></i>
+				</div>
+				<span class="hero-extra_text">eLearning</span>
+			</a>
+
+			<a href="#" class="hero-extra third-section subsection">
+				<div class="hero-extra_icon">
+					<i class="fa fa-graduation-cap"></i>
+				</div>
+				<span class="hero-extra_text">ISVU</span>
+			</a>
 		</div>
 	</div>
 

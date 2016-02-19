@@ -1,10 +1,11 @@
 // Posts output throughout the pages
+// 1. Main posts
 .post {
   display: flex;
 
 	&.has-thumbnail {
 		.post-content {
-			width: 50%;
+      width: 70%;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -12,27 +13,25 @@
 	}
 }
 
-.post-header {
-  border-bottom: 1px solid $lGrey;
-}
-
 .post-title {
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 600;
-  padding: 20px;
+  padding: 10px 20px;
   display: block;
   line-height: 1.2;
 }
 
 .post-image {
-  img {
-    display: block;
-  }
+  display: block;
+  width: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .post-excerpt {
   p {
     font-size: 18px;
+    font-weight: 400;
     padding: 0 20px;
   }
 }
@@ -41,7 +40,6 @@
   span {
     display: block;
     padding: 10px 20px;
-    border-top: 1px solid $lGrey;
     font-size: 16px;
     color: $mGrey;
     font-weight: 600;
@@ -54,21 +52,101 @@
   }
 }
 
-// General Page Styles
-.page {
-  #hero-section {
-    height: 300px;
+// 2. Other posts in category
+.other-posts-section {
+  background-color: $dGrey;
 
-    .container {
-      align-items: center;
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .subsection-heading {
+    color: $lGrey;
+    padding: 30px 0;
+
+    span {
+      font-size: 100%;
     }
   }
+}
 
-  .hero-extras {
+.other-posts {
+  margin-bottom: 0;
+}
+
+.other-posts_title {
+  font-size: 21px;
+  font-weight: 600;
+  padding: 15px;
+  display: block;
+  line-height: 1.2;
+}
+
+.other-posts_excerpt {
+  padding: 15px;
+
+  p {
+    padding: 0;
+    font-size: 18px;
+  }
+}
+
+.other-posts_footer {
+  span {
+    font-size: 100%;
+    display: block;
+    padding: 0 15px 10px 15px;
+    font-family: $FS;
+    font-weight: 600;
+    color: $mGrey;
+  }
+}
+
+// 3. Program Page posts
+.program-page_post {
+  margin: 0;
+
+  .post-header {
+    background-color: $Red;
+    border: none;
   }
 
-  .hero-extra {
-    margin: 0;
+  .post-title {
+    font-size: 21px;
+    font-weight: 600;
+    padding: 15px;
+    display: block;
+    line-height: 1.2;
+    color: $lGrey;
+  }
+
+  .post-excerpt {
+    p {
+      line-height: 1.4;
+      padding: 20px;
+    }
+  }
+}
+
+
+// General Page Styles
+.home {
+  .hero-extras {
+    margin-top: 10%;
+  }
+}
+
+.page {
+  #hero-section {
+    height: 40vh;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    .hero-extras {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -76,6 +154,8 @@
   color: $lGrey;
   text-transform: uppercase;
   font-family: $Ubuntu;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -108,7 +188,7 @@
 	margin: 0 0 1.5em;
 }
 
-// Category specific css
+// Category specific CSS
 .dogadanja-text {
 	color: $lOrange;
 }

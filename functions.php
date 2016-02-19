@@ -119,6 +119,10 @@ add_action( 'widgets_init', 'vus_widgets_init' );
 function vus_scripts() {
 	wp_enqueue_style( 'vus-style', get_stylesheet_uri() );
 
+	wp_enqueue_script('jquery');
+
+	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js');
+
 	wp_enqueue_script( 'vus-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'vus-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -128,6 +132,13 @@ function vus_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'vus_scripts' );
+
+// Function to return the link to the category
+function getCatUrl($categoryName) {
+    $categoryID = get_cat_ID($categoryName);
+    $categoryLink = get_category_link($categoryID);
+		echo esc_url($categoryLink);
+}
 
 /*
 	* Display the Read More link when using the_excerpt()
@@ -149,6 +160,15 @@ function thumbClass() {
 		echo 'has-thumbnail';
 	}
 }
+
+// Extract the src of the Featured Image
+function extractImgSrc($thumbnailName) {
+	if(has_post_thumbnail($post->ID)) {
+		$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), '$thumbnailName' );
+		echo $image[0];
+	}
+}
+
 
 // Output the site heading if its front page, else output page title
 function siteHeading() {
@@ -180,8 +200,8 @@ function postsInCategory($catName, $numOfPosts, $excerptLength, $articleClass) {
 	<article class="<?php thumbClass(); echo ' ' . $articleClass; ?> post subsection">
 		<?php
 		if(has_post_thumbnail()) : ?>
-			<a href="<?php echo get_permalink(); ?>" class="post-image">
-				<?php the_post_thumbnail('home-post_thumbnail'); ?>
+			<a href="<?php echo get_permalink(); ?>" class="post-image" style="background-image: url(<?php extractImgSrc('home-post_thumbnail'); ?>);">
+
 			</a>
 		<?php endif; ?>
 		<!-- Post Content -->

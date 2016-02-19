@@ -1,7 +1,7 @@
 body.single {
 
   #hero-section {
-    height: 20vh;
+    height: 200px;
 
     .container {
       align-items: center;
@@ -12,19 +12,17 @@ body.single {
     display: none;
   }
 
-  .hero-extras {
-    position: initial;
-    width: initial;
-    transform: none;
+  .hero-extra_icon i {
+    padding: 12px;
   }
 
-  .hero-extra {
-    margin: 0;
+  .hero-extra_text {
+    padding: 10px;
   }
 }
 
 .single-header {
-  margin: 60px 0 20px;
+  padding: 20px 0;
 }
 
 .single-title {
@@ -78,60 +76,13 @@ body.single {
   }
 }
 
+.single-image {
+  height: 300px;
+}
+
 .single-content {
   text-align: center;
   p {
     text-align: left;
-  }
-}
-
-// Other Posts
-
-.other-posts-section {
-  background-color: $dGrey;
-
-  .container {
-    display: flex;
-    align-items: baseline;
-  }
-
-  .subsection-heading {
-    color: $lGrey;
-    padding: 30px 0;
-
-    span {
-      font-size: 100%;
-    }
-  }
-}
-
-.other-posts_header {
-}
-
-.other-posts_title {
-  display: block;
-  line-height: 1.2;
-  padding: 15px;
-  font-size: 21px;
-  font-weight: 600;
-}
-
-.other-posts_excerpt {
-  padding: 15px;
-
-  p {
-    padding: 0;
-    font-size: 18px;
-  }
-}
-
-.other-posts_footer {
-  span {
-    font-size: 100%;
-    display: block;
-    padding: 0 15px 10px 15px;
-    font-family: $FS;
-    font-weight: 600;
-    color: $mGrey;
   }
 }

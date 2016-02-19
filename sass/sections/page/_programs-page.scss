@@ -2,23 +2,3 @@
   background-color: $dGrey;
   padding: 60px 0;
 }
-
-.program-page_post {
-  margin: 0;
-
-  .post-header {
-    background-color: $Red;
-    border: none;
-
-    a {
-      color: $lGrey;
-    }
-  }
-
-  .post-excerpt {
-    p {
-      line-height: 1.4;
-      padding: 20px;
-    }
-  }
-}

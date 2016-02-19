@@ -6,15 +6,14 @@
 ?>
 <section class="news-home main-section">
 	<div class="container">
-		<div id="home_news-container" class="half-section">
-			<h1 class="subsection-heading">Novosti</h1>
-			<?php postsInCategory('Novosti', 2, 10, 'full-section'); ?>
+		<div id="home_news-container" class="home-posts_container half-section">
+			<a href="<?php getCatUrl('Novosti'); ?>" class="subsection-heading">Novosti<i class="fa fa-angle-double-right"></i></a>
+			<?php postsInCategory('Novosti', 2, 20, 'full-section'); ?>
 		</div>
 
-		<div id="home_events-container" class="half-section">
-			<h1 class="subsection-heading">Događanja</h1>
-			<?php postsInCategory('Događanja', 2, 10, 'full-section'); ?>
+		<div id="home_events-container" class="home-posts_container half-section">
+			<a href="<?php getCatUrl('Događanja'); ?>" class="subsection-heading">Događanja<i class="fa fa-angle-double-right"></i></a>
+			<?php postsInCategory('Događanja', 2, 20, 'full-section'); ?>
 		</div>
 	</div>
-
 </section>

@@ -28,6 +28,19 @@ hr {
 	margin-bottom: 1.5em;
 }
 
+.divider {
+	&:after {
+		content: "...";
+		position: absolute;
+		bottom: -40px; left: 50%;
+		transform: translateX(-50%);
+		font-family: $Mont;
+		color: $mGrey;
+		font-size: 28px;
+		letter-spacing: 20px;
+	}
+}
+
 @import "lists";
 
 img {
@@ -36,3 +49,5 @@ img {
 }
 
 @import "tables";
+
+@import "modals";

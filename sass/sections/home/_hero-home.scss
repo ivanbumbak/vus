@@ -20,38 +20,51 @@
 	}
 }
 
-.hero-extras {
-	width: 70%;
-	position: absolute;
-	left: 50%; bottom: 2vh;
-	transform: translateX(-50%);
+.hero-extra {
+	background-color: rgba(1,1,1,0);
 	display: flex;
 	justify-content: space-between;
-}
-
-.hero-extra {
-	border-radius: 1px;
-	background-color: rgba(white, 0.8);
-	transition: .15s ease-in-out;
+	align-items: center;
+	margin: 0;
+	color: $mGrey;
 
 	&:hover {
-		background-color: white;
-		box-shadow: 0 4px 6px rgba(black, 0.3);
-		transition: .15s ease-in-out;
-	}
+		.hero-extra_icon {
+			background-color: rgba($mBlue, 1);
+			transition: .3s ease-in-out;
+		}
 
-	a {
-		padding: 15px 40px;
-		font-size: 20px;
-		display: flex;
-		align-items: center;
-		color: $mBlue;
+		.hero-extra_text {
+			color: $mBlue;
+			transition: .3s ease-in-out;
+		}
 	}
+}
+
+.hero-extra_icon {
+	background-color: rgba($mBlue, 0.6);
+	transition: .3s ease-in-out;
 
 	i {
-		font-size: 46px;
-		padding-right: 20px;
+		display: block;
+		padding: 20px;
+		font-size: 32px;
+		color: $lGrey;
 	}
+}
+
+.hero-extra_text {
+	background-color: $lGrey;
+	transition: .3s ease-in-out;
+	color: $dGrey;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: center;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 18px;
 }
 
 #hr-heading, #en-heading {

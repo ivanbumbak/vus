@@ -12,6 +12,27 @@
 	justify-content: space-between;
 }
 
+.container-medium {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1024px;
+	justify-content: space-between;
+}
+
+.container-small {
+	display: flex;
+	flex-wrap: wrap;
+	width: 768px;
+	justify-content: space-between;
+}
+
+.container-xsmall {
+	display: flex;
+	flex-wrap: wrap;
+	width: 480px;
+	justify-content: space-between;
+}
+
 .site-content {
 	display: flex;
 	justify-content: center;
@@ -73,6 +94,10 @@
 	width: 49.5%;
 }
 
+.real-half-section {
+	width: 50%;
+}
+
 .third-section {
 	width: 32.66%;
 }
@@ -86,6 +111,14 @@
 /*********/
 @media screen and (max-width: 1024px) {
 	.container {
+		width: 100%;
+	}
+}
+
+/* 864px */
+/********/
+@media screen and (max-width: 864px) {
+	.real-half-section {
 		width: 100%;
 	}
 }
@@ -109,7 +142,7 @@
 /* 480px */
 /********/
 @media screen and (max-width: 480px) {
-	.half-section {
+	.half-section, .real-half-section {
 		width: 100%;
 	}
 }

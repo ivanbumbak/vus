@@ -27,12 +27,13 @@ Post Class
 
 	</header><!-- .entry-header -->
 
+	<?php
+	if(has_post_thumbnail()) { ?>
+		<div class="single-image full-subsection" style="background-image:url(<?php extractImgSrc('single-post_thumbnail'); ?>)"></div>
+	<?php } ?>
+
 	<div class="single-content">
-		<?php
-		if(has_post_thumbnail()) {
-				the_post_thumbnail('single-post_thumbnail');
-		}
-		?>
+
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 
