@@ -1,0 +1,88 @@
+.archive {
+  #hero-section {
+    height: 40vh;
+
+    .container {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .hero-extras {
+      margin-top: 40px;
+    }
+  }
+
+  #main {
+    padding-top: 30px;
+  }
+
+  .post {
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(black, 0.1);
+  }
+}
+
+.archive-post_image {
+  width: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.archive-post_content {
+  width: 70%;
+}
+
+
+.archive-post_header {
+
+}
+
+.archive-post_title {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 34px;
+  font-weight: 600;
+  font-family: $FS;
+  color: $mGrey;
+}
+
+.archive-post_meta {
+  padding: 0 20px;
+}
+
+.archive-post_excerpt {
+  p {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .read-more {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: $mBlue;
+    color: $lGrey;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(black, 0.5);
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: $dOrange;
+      transition: all .3s ease-in-out;
+    }
+
+    i {
+      padding-left: 10px;
+      font-size: 24px;
+    }
+  }
+}
+
+.archive-post_footer {
+  display: none;
+  padding: 0 20px 10px;
+}

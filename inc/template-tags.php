@@ -26,7 +26,7 @@ function vus_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'vus' ), $time_string
+		esc_html_x( 'Objavljeno %s', 'post date', 'vus' ), $time_string
 	);
 
 	$byline = sprintf(

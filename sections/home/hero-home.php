@@ -7,6 +7,9 @@
 		if(is_front_page()) {
 			siteHeading();
 		}
+		elseif(is_archive()) {
+			the_archive_title( '<h1 class="page-title">', '</h1>' );
+		}
 		elseif(is_page()) {
 			pageHeading();
 		}

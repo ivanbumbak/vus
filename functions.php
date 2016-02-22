@@ -182,7 +182,7 @@ function pageHeading() {
 
 // Function to display posts in a specific category
 function postsInCategory($catName, $numOfPosts, $excerptLength, $articleClass) {
-// Ispisuje dvi najnovije obavijesti s kategorijom 'news'
+// Ispisuje najnovije obavijesti s kategorijom 
 
 	$catID = get_cat_ID($catName); //Return the Category ID from the Category Name
 	$latestPosts = new WP_Query(

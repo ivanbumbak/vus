@@ -1,7 +1,6 @@
 <?php
 // TODO: Kategorije
 // TODO: Vrijeme
-// TODO: Popravit Excerpt
 // TODO: Ponašanje slike
 ?>
 <section class="news-home main-section">

@@ -27,7 +27,8 @@ get_header(); ?>
 				<div class="container">
 					<header class="schedule-modal_header">
 						<h2>Informatički Menadžment 1. Godina
-						<i class="close-modal fa fa-close"></i></h2>
+							<i class="close-modal fa fa-close"></i>
+						</h2>
 					</header>
 					<!-- PDF Goes Here -->
 				</div>
@@ -44,8 +45,9 @@ get_header(); ?>
 			<div id="modalIM2" class="schedule-modal">
 				<div class="container">
 					<header class="schedule-modal_header">
-						<h2>Informatički Menadžment 1. Godina
-						<i class="close-modal fa fa-close"></i></h2>
+						<h2>Informatički Menadžment 2. Godina
+							<i class="close-modal fa fa-close"></i>
+						</h2>
 					</header>
 					<!-- PDF Goes Here -->
 				</div>
@@ -62,8 +64,9 @@ get_header(); ?>
 			<div id="modalIM3" class="schedule-modal">
 				<div class="container">
 					<header class="schedule-modal_header">
-						<h2>Informatički Menadžment 1. Godina
-						<i class="close-modal fa fa-close"></i></h2>
+						<h2>Informatički Menadžment 3. Godina
+							<i class="close-modal fa fa-close"></i>
+						</h2>
 					</header>
 					<!-- PDF Goes Here -->
 				</div>
