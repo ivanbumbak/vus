@@ -16,6 +16,12 @@
   padding: 1% 5%;
   background-size: cover;
   background-position: center center;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-position: 50% 35%;
+    transition: all .3s ease-in-out;
+  }
 
   &.half-section {
     width: 50%;

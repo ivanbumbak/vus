@@ -729,6 +729,15 @@ table {
 .schedule-modal .container {
   width: 100%;
   height: 100%;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .modal-bg {
@@ -746,13 +755,15 @@ table {
 
 .schedule-modal_header {
   width: 100%;
-  height: auto;
 }
 
 .schedule-modal_header h2 {
   margin: 0;
+  font-size: 21px;
   background-color: #4183D7;
   text-align: center;
+  font-family: Fira Sans, sans-serif;
+  letter-spacing: 0.7px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ECF0F1;
@@ -772,6 +783,11 @@ table {
   transition: all .1s ease-in-out;
   cursor: pointer;
   background-color: #C0392B;
+}
+
+.schedule-pdf {
+  height: 100%;
+  overflow: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -1442,7 +1458,7 @@ body.single .hero-extra_text {
 }
 
 .archive #hero-section {
-  height: 40vh;
+  height: 200px;
 }
 
 .archive #hero-section .container {
@@ -1457,17 +1473,14 @@ body.single .hero-extra_text {
           flex-direction: column;
 }
 
-.archive #hero-section .hero-extras {
-  margin-top: 40px;
-}
-
-.archive #main {
-  padding-top: 30px;
-}
-
 .archive .post {
   background-color: white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.archive-page_title {
+  text-transform: uppercase;
+  color: #333333;
 }
 
 .archive-post_image {
@@ -1483,7 +1496,7 @@ body.single .hero-extra_text {
 .archive-post_title {
   margin: 0;
   padding: 10px 20px;
-  font-size: 34px;
+  font-size: 29px;
   font-weight: 600;
   font-family: Fira Sans, sans-serif;
   color: #95A5A6;
@@ -1495,7 +1508,7 @@ body.single .hero-extra_text {
 
 .archive-post_excerpt p {
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
@@ -1768,6 +1781,12 @@ body.single .hero-extra_text {
   padding: 1% 5%;
   background-size: cover;
   background-position: center center;
+  transition: all .3s ease-in-out;
+}
+
+.study-section:hover {
+  background-position: 50% 35%;
+  transition: all .3s ease-in-out;
 }
 
 .study-section.half-section {
@@ -1839,6 +1858,10 @@ body.single .hero-extra_text {
 
 .home-program:nth-child(+n+5) {
   margin: 0;
+}
+
+.home-program .post-image {
+  display: none;
 }
 
 .home-program_icon {

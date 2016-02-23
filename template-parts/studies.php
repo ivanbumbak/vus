@@ -25,12 +25,14 @@ get_header(); ?>
 			<div class="modal-bg"></div>
 			<div id="modalIM1" class="schedule-modal">
 				<div class="container">
-					<header class="schedule-modal_header">
+					<!-- <header class="schedule-modal_header">
 						<h2>Informatički Menadžment 1. Godina
 							<i class="close-modal fa fa-close"></i>
 						</h2>
-					</header>
-					<!-- PDF Goes Here -->
+					</header> -->
+					<section class="schedule-pdf">
+						<object width="100%" height="100%" data="http://localhost/veleuciliste_u_sibeniku/wp-content/uploads/2016/02/INF_-r_III.6.pdf" type="application/pdf"></object>
+					</section>
 				</div>
 			</div>
 

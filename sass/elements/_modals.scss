@@ -19,6 +19,9 @@
   .container {
     width: 100%;
     height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
 
@@ -36,12 +39,14 @@
 
 .schedule-modal_header {
   width: 100%;
-  height: auto;
 
   h2 {
     margin: 0;
+    font-size: 21px;
     background-color: $mBlue;
     text-align: center;
+    font-family: $FS;
+    letter-spacing: 0.7px;
     font-weight: 700;
     text-transform: uppercase;
     color: $lGrey;
@@ -61,4 +66,9 @@
     cursor: pointer;
     background-color: $Red;
   }
+}
+
+.schedule-pdf {
+  height: 100%;
+  overflow: hidden;
 }

@@ -7,23 +7,26 @@ get_header(); ?>
 
 	<section class="page-section main-section">
 		<div class="container">
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
 
-				<?php
-				if(have_posts()) {
-					while (have_posts()) {
-						the_post();
-						get_template_part('template-parts/content', get_post_format());
+			<h1 class="archive-page_title section-heading"><?php single_cat_title(); ?></h1>
+
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main" role="main">
+
+					<?php
+					if(have_posts()) {
+						while (have_posts()) {
+							the_post();
+							get_template_part('template-parts/content', get_post_format());
+						}
+						the_posts_navigation();
 					}
-					the_posts_navigation();
-				}
-				else {
-					get_template_part( 'template-parts/content', 'none' );
-				}
-				?>
+					else {
+						get_template_part( 'template-parts/content', 'none' );
+					}
+					?>
 
-				</main><!-- #main -->
+					</main><!-- #main -->
 			</div><!-- #primary -->
 		</div>
 	</section>
