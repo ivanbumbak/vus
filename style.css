@@ -426,6 +426,11 @@ ul li, ol li {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+#main {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 .main-section {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1060,6 +1065,32 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.single-content h1, .single-content h2, .page-content h1, .page-content h2 {
+  margin: 0;
+  padding: 5px 10px;
+  font-family: 'Enriqueta', serif;
+  letter-spacing: -.055em;
+}
+
+.single-content h1, .page-content h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.15;
+  color: black;
+}
+
+.single-content h2, .page-content h2 {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1.22;
+  color: rgba(0, 0, 0, 0.44);
+}
+
+.single-content p, .page-content p {
+  font-family: 'Enriqueta', serif;
+  padding: 10px;
+}
+
 .post {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1390,6 +1421,7 @@ body.single .hero-extra_text {
 
 .single-image {
   height: 300px;
+  margin-bottom: 20px;
 }
 
 .single-content {
@@ -1403,21 +1435,10 @@ body.single .hero-extra_text {
 /*--------------------------------------------------------------
 # Templates
 --------------------------------------------------------------*/
-.schedules {
-  position: relative;
-  margin: 30px auto 0;
-  padding: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-
-.schedule {
+.schedule-link {
+  box-shadow: 0 1px 2px rgba(51, 51, 51, 0.1);
   margin: 0;
-  padding: 20px;
+  padding: 20px 40px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1425,36 +1446,52 @@ body.single .hero-extra_text {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  transition: all .3s ease-in-out;
-}
-
-.schedule:hover {
-  cursor: pointer;
-  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.3);
-  transition: all .3s ease-in-out;
-}
-
-.schedule:hover .schedule-icon {
-  color: #4183D7;
-  transition: all .3s ease-in-out;
-}
-
-.schedule-icon {
-  padding-left: 20px;
-  font-size: 24px;
-  color: #95A5A6;
-}
-
-.schedule-text {
-  padding-right: 20px;
+  background-color: white;
   font-size: 32px;
   font-weight: 700;
   font-family: Montserrat, sans-serif;
   line-height: 1;
   color: #4183D7;
+  transition: all .3s ease-in-out;
+}
+
+.schedule-link:hover {
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.3);
+  transition: all .3s ease-in-out;
+}
+
+.schedule-link:before {
+  content: '\f073';
+  font-family: FontAwesome;
+  padding-right: 30px;
+  font-weight: 300;
+  color: #95A5A6;
+}
+
+.has-schedule p:first-of-type {
+  width: 70%;
+  margin: 0 auto 20px auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.has-schedule p:first-of-type:after {
+  content: "...";
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: Montserrat, sans-serif;
+  color: #95A5A6;
+  font-size: 28px;
+  letter-spacing: 20px;
 }
 
 .archive #hero-section {
@@ -1612,6 +1649,7 @@ body.single .hero-extra_text {
 }
 
 .hero-extra_text {
+  font-family: Montserrat, sans-serif;
   background-color: #ECF0F1;
   transition: .3s ease-in-out;
   color: #333333;

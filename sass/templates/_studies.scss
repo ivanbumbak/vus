@@ -1,43 +1,51 @@
-.schedules {
-  position: relative;
-  margin: 30px auto 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-.schedule {
+.schedule-link {
+  box-shadow: 0 1px 2px rgba($dGrey, 0.1);
   margin: 0;
-  padding: 20px;
+  padding: 20px 40px;
   text-align: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  transition: all .3s ease-in-out;
-
-  &:hover {
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba($dGrey, 0.3);
-    transition: all .3s ease-in-out;
-
-    .schedule-icon {
-      color: $mBlue;
-      transition: all .3s ease-in-out;
-    }
-  }
-}
-
-.schedule-icon {
-  padding-left: 20px;
-  font-size: 24px;
-  color: $mGrey;
-}
-
-.schedule-text {
-  padding-right: 20px;
+  background-color: white;
   font-size: 32px;
   font-weight: 700;
   font-family: $Mont;
   line-height: 1;
   color: $mBlue;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 5px 10px rgba($dGrey, 0.3);
+    transition: all .3s ease-in-out;
+  }
+
+  &:before {
+    content: '\f073';
+    font-family: FontAwesome;
+    padding-right: 30px;
+    font-weight: 300;
+    color: $mGrey;
+  }
+}
+
+.has-schedule {
+  p:first-of-type {
+    width: 70%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &:after {
+  		content: "...";
+  		position: absolute;
+  		bottom: -24px; left: 50%;
+  		transform: translateX(-50%);
+  		font-family: $Mont;
+  		color: $mGrey;
+  		font-size: 28px;
+  		letter-spacing: 20px;
+    }
+
+
+  }
 }

@@ -13,68 +13,6 @@ get_header(); ?>
 
 <section class="page-section main-section">
 	<div class="container">
-
-		<div class="schedules half-section divider">
-			<!-- Modal/Schedule Button -->
-			<div id="scheduleIM1" class="schedule third-section subsection">
-				<i class="schedule-icon fa fa-calendar"></i>
-				<span class="schedule-text">1</span>
-			</div>
-
-			<!-- Modal -->
-			<div class="modal-bg"></div>
-			<div id="modalIM1" class="schedule-modal">
-				<div class="container">
-					<!-- <header class="schedule-modal_header">
-						<h2>Informatički Menadžment 1. Godina
-							<i class="close-modal fa fa-close"></i>
-						</h2>
-					</header> -->
-					<section class="schedule-pdf">
-						<object width="100%" height="100%" data="http://localhost/veleuciliste_u_sibeniku/wp-content/uploads/2016/02/INF_-r_III.6.pdf" type="application/pdf"></object>
-					</section>
-				</div>
-			</div>
-
-			<!-- Modal/Schedule Button -->
-			<div id="scheduleIM2" class="schedule third-section subsection">
-				<i class="schedule-icon fa fa-calendar"></i>
-				<span class="schedule-text">2</span>
-			</div>
-
-			<!-- Modal -->
-			<div class="modal-bg"></div>
-			<div id="modalIM2" class="schedule-modal">
-				<div class="container">
-					<header class="schedule-modal_header">
-						<h2>Informatički Menadžment 2. Godina
-							<i class="close-modal fa fa-close"></i>
-						</h2>
-					</header>
-					<!-- PDF Goes Here -->
-				</div>
-			</div>
-
-			<!-- Modal/Schedule Button -->
-			<div id="scheduleIM3" class="schedule third-section subsection">
-				<i class="schedule-icon fa fa-calendar"></i>
-				<span class="schedule-text">3</span>
-			</div>
-
-			<!-- Modal -->
-			<div class="modal-bg"></div>
-			<div id="modalIM3" class="schedule-modal">
-				<div class="container">
-					<header class="schedule-modal_header">
-						<h2>Informatički Menadžment 3. Godina
-							<i class="close-modal fa fa-close"></i>
-						</h2>
-					</header>
-					<!-- PDF Goes Here -->
-				</div>
-			</div>
-
-		</div>
 		<main id="main" class="site-main" role="main">
 			<?php while(have_posts()) : the_post(); ?>
 				<?php get_template_part('template-parts/content', 'page'); ?>

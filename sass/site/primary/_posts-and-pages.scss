@@ -1,4 +1,32 @@
 // Posts output throughout the pages
+.single-content, .page-content {
+
+  h1, h2 {
+    margin: 0;
+    padding: 5px 10px;
+    font-family: 'Enriqueta', serif;
+    letter-spacing: -.055em;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.15;
+    color: black;
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.22;
+    color: rgba(black, .44);
+  }
+  
+  p {
+    font-family: 'Enriqueta', serif;
+    padding: 10px;
+  }
+}
 // 1. Main posts
 .post {
   display: flex;

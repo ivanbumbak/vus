@@ -9,25 +9,22 @@ get_header(); ?>
 		<div class="container">
 
 			<h1 class="archive-page_title section-heading"><?php single_cat_title(); ?></h1>
+			<section class="archive-content" role="main">
 
-			<div id="primary" class="content-area">
-				<main id="main" class="site-main" role="main">
-
-					<?php
-					if(have_posts()) {
-						while (have_posts()) {
-							the_post();
-							get_template_part('template-parts/content', get_post_format());
-						}
-						the_posts_navigation();
+				<?php
+				if(have_posts()) {
+					while (have_posts()) {
+						the_post();
+						get_template_part('template-parts/content', get_post_format());
 					}
-					else {
-						get_template_part( 'template-parts/content', 'none' );
-					}
-					?>
+					the_posts_navigation();
+				}
+				else {
+					get_template_part( 'template-parts/content', 'none' );
+				}
+				?>
 
-					</main><!-- #main -->
-			</div><!-- #primary -->
+			</section><!-- #main -->
 		</div>
 	</section>
 
