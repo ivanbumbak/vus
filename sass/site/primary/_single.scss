@@ -79,11 +79,21 @@ body.single {
 .single-image {
   height: 300px;
   margin-bottom: 20px;
+  background-size: cover;
+  background-position: center center;
 }
 
 .single-content {
   text-align: center;
+
   p {
     text-align: left;
+  }
+
+  a img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
   }
 }

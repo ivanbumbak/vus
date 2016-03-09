@@ -43,6 +43,7 @@ function vus_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	add_image_size( 'home-post_thumbnail', 320);
+	add_image_size( 'post-content_thumbnail', 1024);
 	add_image_size( 'single-post_thumbnail', 640);
 
 	// This theme uses wp_nav_menu() in one location.
@@ -182,7 +183,7 @@ function pageHeading() {
 
 // Function to display posts in a specific category
 function postsInCategory($catName, $numOfPosts, $excerptLength, $articleClass) {
-// Ispisuje najnovije obavijesti s kategorijom 
+// Ispisuje najnovije obavijesti s kategorijom
 
 	$catID = get_cat_ID($catName); //Return the Category ID from the Category Name
 	$latestPosts = new WP_Query(

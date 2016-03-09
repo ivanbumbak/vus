@@ -6,5 +6,6 @@ jQuery(document).ready(function($) {
   }
 
   // Find Schedule Links and modify them
-  $('a[href*=".pdf"]').addClass('schedule-link third-section').attr("target","_blank");;
+  $('a[href*=".pdf"]').addClass('schedule-link third-section').attr("target","_blank");
+
 });
